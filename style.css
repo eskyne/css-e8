@@ -1,0 +1,117 @@
+/*Normalize body0*/
+body {
+    margin: 0px;
+}
+
+.main-container {
+    padding-top: 20px;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.card-container {
+    max-width: 1200px;
+    width: 100%;
+
+    padding: 0px 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+
+    .card-container {
+        max-width: 720px;
+    }
+
+}
+
+/*Smartphone*/
+@media (max-width: 760px) {
+
+    .card-container {
+        max-width: 400px;
+        justify-content: center;
+    }
+
+}
+
+/*Card style related*/
+
+.card {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+
+    width: 345px;
+    height: 500px;
+
+    flex: 0 0 auto;
+
+    overflow: hidden;
+}
+
+.card-head {
+    background: linear-gradient(90deg, rgb(166, 166, 166) 0%, rgb(175, 175, 175) 30%, rgb(185, 185, 185) 100%);
+
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+}
+
+.card-image > img {
+    display: block;
+}
+
+.card-description {
+    background: linear-gradient(100deg, rgb(210,211,211) 0%, rgb(242,242,242) 100%);
+
+    height: 100%;
+
+    padding: 10px;
+}
+
+.head-circle {
+    background-color: white;
+    border-radius: 50%;
+
+    margin: 0px 10px;
+
+    width: 48px;
+    height: 48px;
+}
+
+.head-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    flex-grow: 1;
+}
+
+.head-text > .date {
+    color: white;
+    font-size: 13px;
+}
+
+.head-ellipsis {
+    font-size: 25px;
+    margin: 0px 10px;
+}
+
+.description-icon {
+    color: #454955;
+
+    margin: 5px;
+}
+
+.description-text {
+    margin-top: 0px;
+    text-align: justify;
+}
